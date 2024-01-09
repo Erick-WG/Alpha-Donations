@@ -10,6 +10,7 @@
 button,
 body {
     font-family: 'Oswald', sans-serif;
+    max-height: 1000px;
 }
 
 * {
@@ -18,13 +19,21 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+
 .fullContainer {
     width: 100%;
+    
 }
 
 .container {
     width: 1140px;
-    margin: auto; 
+    margin: auto;
 }
 
 /*Common styles end*/
@@ -77,9 +86,58 @@ header nav ul li a {
 
 header nav ul li a:hover{
     background-color:var(--themeRed);
-    
-
 }
+
+.banner {
+    min-height:100vh;
+    background-image:url("../Assets/Caucasian\ girl.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+.banner h1{
+    margin-top:230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px#000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span {
+    background-color: var(--themeRed);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+banner p {
+    color:#fff;
+    width:50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.banner button {
+    background-color: var(--themeRed);
+    border:0;
+    outline: none;
+    color:#fff;
+    padding:10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/*Home Styles end*/
+
+
+
+
 
 
 
