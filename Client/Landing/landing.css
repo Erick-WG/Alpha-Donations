@@ -10,7 +10,8 @@
 button,
 body {
     font-family: 'Oswald', sans-serif;
-    max-height: 1000px;
+    scroll-behavior: smooth;
+    margin-bottom: 900px;
 }
 
 * {
@@ -28,22 +29,18 @@ p {
 
 .fullContainer {
     width: 100%;
-    
 }
 
 .container {
     width: 1140px;
     margin: auto;
 }
-
 /*Common styles end*/
 
-
 /*Home styles start*/
-
 header {
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 2;
 }
@@ -54,22 +51,20 @@ header .container {
 }
 
 header .container .logo {
-    padding: 15px;
+    padding: 15px 0;
     height: 75px;
 }
 
-header .containeer .logo img {
+header .container .logo img{
     height: 100%;
 }
 
 header nav ul {
     list-style-type: none;
-
 }
 
 header nav ul li {
     display: inline-block;
-
 }
 
 header nav ul li a {
@@ -80,20 +75,23 @@ header nav ul li a {
     text-decoration:none;
     text-transform: capitalize;
     font-size: 24px;
-    Color:#fff;
+    color:#fff;
     transition:0.3s;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     background-color:var(--themeRed);
+    color:#fff;
 }
 
 .banner {
-    min-height:100vh;
+    min-height: 100vh;
     background-image:url("../Assets/Caucasian\ girl.jpg");
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
+    background-position: center top;
+    
 }
 
 .banner h1{
@@ -116,11 +114,11 @@ header nav ul li a:hover{
     border-radius: 5px;
 }
 
-banner p {
+.banner p {
     color:#fff;
     width:50%;
     text-shadow: 0 0 2px #000;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .banner button {
@@ -128,12 +126,37 @@ banner p {
     border:0;
     outline: none;
     color:#fff;
-    padding:10px 15px;
+    padding: 10px 15px;
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 550;
+    cursor:pointer;
 }
 
+
+
+/*Banner Animations */
+.banner h1, .banner p, .banner button {
+    opacity:0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.banner h1.show, .banner p.show, .banner button.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 /*Home Styles end*/
+
+
+
+
+
+
+
+
+
 
 
 
